@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function reverse(num){
+        
+        num=String(num);
+             while(num>0){
+                
+                let result=0;
+             rightmost=num%10;
+             result=result+rightmost;
+            num=Math.floor(num/10);
+            console.log(result);}
+        }
+        reverse(45678);
+    </script>
+</body>
+</html>

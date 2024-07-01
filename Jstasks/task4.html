@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function showtime(){
+        const date = new Date();
+        document.getElementById("show1").innerHTML=date;
+    }
+    function showdate(){
+        const date = new Date();
+
+        let day = date.getDate();
+       let month = date.getMonth() + 1;
+        let year = date.getFullYear();
+        let currentDate = `${day}/${month}/${year}`;
+         document.getElementById("show2").innerHTML=currentDate;
+    }
+    
+</script>
+<body>
+    <button onClick="showdate()" id= >showdate</button><br>
+    <div id="show2"></div>
+    <br><br>
+    <button onclick="showtime()">showtime</button>
+    <div id="show1"></div>
+
+</body>
+</html>
